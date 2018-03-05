@@ -1,0 +1,489 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+    font: 15px/1 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote{
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font: 15px/1 'Dosis', sans-serif;
+    font-weight: 400;
+}
+section {
+    padding-top: 140px;
+}
+ul, ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.title {
+    padding-bottom: 75px;
+    text-transform: uppercase;
+}
+.title h2 {
+    letter-spacing: .5em;
+}
+.section-small {
+    padding-top: 70px;
+}
+.section-light {
+    color: #777;
+    background: #fff;
+}
+.section-light .title h2 {
+    color: #111;
+}
+.section-grey {
+    color: #111;
+    background: #f8f8f8;
+}
+.section-dark {
+    color: #fff;
+    background: #111;
+}
+blockquote {
+    padding: 0;
+    border: none;
+    font-size: 24px;
+    line-height: 38px;
+}
+blockquote .author {
+    display: block;
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: .2em;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.text {
+    line-height: 26px;
+}
+
+.btn-default {
+	
+}
+.btn-dark {
+	color: #fff;
+	background: #111;
+}
+.marker {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 23px;
+	transform: rotate(45deg);
+}
+.marker-dark {
+	color: #fff;
+	background: #111;
+}
+.marker-light {
+	color: #222;
+	background: #fff;
+}
+.marker-black {
+	color: #000;
+	background: #fff;
+	box-sizing: padding-box;
+	border: 1px solid #000;
+}
+.marker i {
+	font-size: 14px;
+	transform: rotate(-45deg);
+}
+.marker .fa-phone {
+	transform: rotate(45deg) scale(.9) translate(-2px, -2px);
+}
+.marker-black i {
+	transform: rotate(-45deg) translate(1px, -1px);
+}
+
+.navbar-toggle {
+	border-color: red;
+}
+.navbar-toggle .icon-bar {
+   
+}
+
+/* CUSTOM STYLES */
+
+/* ABOUT STUDIO START */
+.about-studio {
+    padding-bottom: 140px;
+    border-bottom: 1px solid #ececec;
+}
+.about-studio .people {
+    margin-top: 106px;
+}
+.about-studio .photo {
+    position: relative;
+}
+.about-studio .photo img {
+    filter: grayscale(100%);
+}
+.about-studio .name,
+.about-studio .position {
+    display: block;
+    font-family: 'Dosis';
+    font-weight: 400;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+}
+.about-studio .name {
+    margin: 28px 0 12px;
+}
+.about-studio .position {
+    font-size: 12px;
+}
+.about-studio .skills {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+	transform: scale(.8);
+    transition: opacity .3s, transform .3s;
+	padding: 36px 40px 20px;
+}
+.about-studio .skills-title {
+	display: block;
+	font-family: 'Dosis';
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: .3em;
+	margin-bottom: 27px;
+}
+.about-studio .skills p {
+	color: rgba(255, 255, 255, .5);
+	font-size: 13px;
+	line-height: 21px;
+	margin-bottom: 40px;
+}
+.about-studio .progress-wrp {
+	font-weight: 400;
+	letter-spacing: .2em;
+	color: rgba(255, 255, 255, .9);
+	text-transform: uppercase;
+}
+.about-studio .progress-wrp > span {
+	font-size: 11px;
+}
+.about-studio .progress {
+	height: 12px;
+	margin-top: 6px;
+	border-radius: 0;
+	background-color: rgba(255, 255, 255, .15);
+}
+.about-studio .progress-bar {
+	background-color: rgba(255, 255, 255, .75);
+}
+.about-studio .photo:hover .skills {
+    opacity: 1;
+	transform: scale(1);
+}
+.about-studio .photo .skills .progress-bar {
+	width: 0;
+	transition: width .3s ease-in-out .3s;
+}
+.about-studio .photo:hover .skills .progress-branding .progress-bar {
+    width: 74%;
+}
+.about-studio .photo:hover .skills .progress-design .progress-bar {
+    width: 85%;
+}
+.about-studio .photo:hover .skills .progress-development .progress-bar {
+    width: 81%;
+}
+.about-studio .photo:hover .skills .progress-photography .progress-bar {
+    width: 77%;
+}
+/* ABOUT STUDIO END */
+
+/* SERVICES START */
+.services {
+	padding-bottom: 140px;
+}
+.services .nav-tabs li {
+	width: 20%;
+	font-family: 'Dosis';
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+}
+.services .icon-et {
+	display: block;
+	font-size: 48px;
+	margin-bottom: 34px;
+}
+.services .nav-tabs {
+	border: none;
+}
+.services .nav-tabs > li > a {
+	line-height: 1;
+	border: none;
+	color: rgba(17, 17, 17, .5);
+	transition: color .3s;
+}
+.services .nav > li > a:focus,
+.services .nav > li > a:hover {
+	background: none;
+	color: rgba(17, 17, 17, 1);
+}
+
+.services .nav-tabs > li.active > a,
+.services .nav-tabs > li.active > a:focus,
+.services .nav-tabs > li.active > a:hover {
+	border: none;
+	color: rgba(17, 17, 17, 1);
+}
+.services .tab-content {
+	padding-top: 62px;
+}
+/* SERVICES END */
+
+/* LETS-TALK START*/
+.lets-talk img {
+	margin-top: -172px;
+}
+/* LETS-TALK END*/
+
+/* START-PROJECT START*/
+.start-project {
+	position: relative;
+	height: 100px;
+}
+.start-project .hovered {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	background: red;
+	transition: opacity .3s;
+}
+.start-project:hover .hovered {
+	opacity: 1;
+}
+.start-project .container {
+	position: relative;
+	/*z-index: 1;*/
+}
+/* START-PROJECT END */
+
+/* SLIDER START */
+.slider {
+	padding-top: 0;
+	border-top: 3px solid red;
+}
+.slider .slide-title {
+	font-size: 18px !important;
+	font-weight: 300 !important;
+}
+.slider .item {
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+.slider .item .icon-quote {
+	font-size: 32px;
+}
+.slider .item .slide-title {
+	font-family: 'Dosis';
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	margin: 21px 0 45px;
+	display: block;
+}
+.slider .item blockquote {
+	max-width: 730px;
+	margin: 0 auto;
+}
+.slider .item blockquote p {
+	font-size: 18px;
+	line-height: 30px;
+	color: rgba(255, 255, 255, .75);
+}
+.slider .item blockquote .author {
+	color: rgba(255, 255, 255, .3);
+}
+
+.slider .carousel-indicators li {
+	width: 9px !important;
+	height: 9px !important;
+	background-color: #fff;
+	vertical-align: middle;
+}
+.slider .carousel-indicators .active {
+	background-color: rgba(0, 0, 0, 0);
+}
+.slider .carousel-control {
+	overflow: hidden;
+}
+.slider .carousel-control.left,
+.slider .carousel-control.right {
+	background: none;
+}
+.slider .marker {
+	width: 63px;
+	height: 63px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+}
+.slider .left .marker {
+	left: -32px;
+}
+.slider .right .marker {
+	right: -32px;
+}
+.slider .marker .fa-angle-left,
+.slider .marker .fa-angle-right {
+	position: absolute;
+	transform: translateY(-50%) rotate(-45deg);
+}
+.slider .marker .fa-angle-left {
+	top: 20px;
+	left: 41px;
+}
+.slider .marker .fa-angle-right {
+	top: 44px;
+	left: 16px;
+}
+/* SLIDER END */
+
+
+/* CONTACT START */
+.contact {
+	padding-bottom: 140px;
+}
+.contact .contact-icon,
+.contact .contact-data {
+	display: inline-block;
+	vertical-align: middle;
+}
+.contact .contact-data {
+	margin-left: 14px;
+}
+.contact .contact-data-title {
+	display: block;
+}
+.contact .form-left,
+.contact .form-right {
+	width: 50%;
+	float: left;
+}
+.contact .form-left {
+	padding-right: 5px;
+}
+.contact .form-right {
+	padding-left: 5px;
+}
+.contact .form-center {
+	padding-top: 20px;
+	clear: left;
+}
+.contact form {
+	margin-top: 80px;
+}
+.contact input,
+.contact textarea {
+	font-size: 12px;
+	border-color: rgba(0, 0, 0, .1);
+	transition: border-color .3s;
+	border-radius: 2px;
+	color: #777;
+	letter-spacing: .2em;
+}
+.contact input:focus,
+.contact textarea:focus {
+	box-shadow: none;
+	border-color: rgba(0, 0, 0, .5);
+}
+.contact input {
+	height: 36px;
+}
+.contact input + input {
+	margin-top: 10px;
+}
+.contact textarea {
+	min-height: 82px;
+	resize: vertical;
+	padding: 12px;
+}
+.contact .info {
+	font-size: 11px;
+	line-height: 36px;
+	color: #aaa;
+}
+.contact .btn {
+	line-height: 1;
+	font-size: 13px;
+	letter-spacing: .2em;
+	padding: 12px 20px 13px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	transition: all .3s;
+	border: none;
+}
+.contact .btn:hover,
+.contact .btn:focus {
+	background: #333;
+	color: #fff;
+}
+/* CONTACT END */
+
+/* MAP START*/
+.map {
+	padding-top: 0;
+	position: relative;
+	overflow: hidden;
+}
+.map iframe {
+	border: 0;
+	width: 100%;
+	height: 410px;
+}
+.map .map-over {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(17, 17, 17, .95);
+	padding-top: 170px;
+	transition: transform .3s;
+}
+.map .map-text {
+	display: block;
+	margin-top: 30px;
+	font-family: 'Dosis';
+	color: rgba(255, 255, 255, .75);
+	font-size: 16px;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+}
+.map .marker {
+	width: 27px;
+	height: 27px;
+	line-height: 27px;
+}
+.map:hover .map-over {
+	transform: translateY(100%);
+}
+
+/* MAP END*/
